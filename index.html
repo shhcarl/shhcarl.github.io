@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>hallooo ley</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Adding Dancing Script Font (Google Fonts) -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <style>
+    /* Set background image for the whole body */
+    body {
+      background-image: url('snoopy.jpg'); /* Replace with your image path */
+      background-size: cover;  /* Makes sure the background covers the entire page */
+      background-position: center; /* Centers the image */
+      background-repeat: no-repeat; /* Prevents the image from repeating */
+      height: 100vh; /* Ensures the page takes full height */
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; /* Ensures the content is centered vertically */
+    }
+
+    .sci {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      list-style: none;
+      margin-top: 20px;
+    }
+
+    .sci li {
+      background-color: #ffffff00;
+      border-radius: 50%;
+      padding: 15px;
+      transition: all 0.3s ease;
+    }
+
+    .sci li a {
+      font-size: 24px;
+      color: #000;
+    }
+
+    .sci li:hover {
+      transform: scale(1.1);
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .image-container img {
+      max-width: 100px;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    /* Styling for the text with Dancing Script font */
+    .greeting-text {
+      font-family: 'Dancing Script', cursive; /* Dancing Script font */
+      font-size: 50px;
+      font-weight: bold;
+      color: #fff;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Adds shadow to make the text stand out */
+      margin-bottom: 20px;
+      text-align: center;
+      opacity: 0;
+      animation: fadeIn 2s ease-in-out forwards;
+    }
+
+    /* Fade-in effect */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    /* Fireworks effect */
+    .fireworks {
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 200px;
+      height: 200px;
+      background: url('https://img.icons8.com/ios/452/fireworks.png') no-repeat center center;
+      background-size: cover;
+      animation: explode 1s ease-out infinite;
+    }
+
+    /* Fireworks explosion animation */
+    @keyframes explode {
+      0% {
+        transform: scale(0.1) translateX(-50%);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(3) translateX(-50%);
+        opacity: 0;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Fireworks animation -->
+  <div class="fireworks"></div>
+
+  <!-- Happy New Year Text -->
+  <div class="greeting-text">
+    Happy New Year, Ley !
+  </div>
+
+  <!-- Social Media Buttons -->
+  <ul class="sci">
+    <li style="--clr: #2a6b91;"><a href="letter.html"><i class="fa-solid fa-envelope"></i></a></li>
+    <li style="--clr: #059646;"><a href="spotify.html"><i class="fa-brands fa-spotify"></i></a></li>
+    <li style="--clr: #d67ca6;"><a href="main.html"><i class="fa-solid fa-leaf"></i></a></li>
+  </ul>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+</body>
+</html>
